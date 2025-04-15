@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afrihustle Clone</title>
+  <link rel="stylesheet" href="./createAccount.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Left Section: Create Account -->
+    <div class="form-section">
+      <button class="back-button"><i class="fa fa-arrow-left"></i> Back</button>
+      <div class="profile-picture">
+        <img src="./Assets/Logo.jpg" alt="Profile Picture">
+      </div>
+      <form class="create-account-form">
+        <h2>Create Account</h2>
+        <div class="form-row">
+          <div class="input-group">
+            <label for="full-name">Full name</label>
+            <div class="input-wrapper">
+              <i class="fa fa-user"></i>
+              <input type="text" id="full-name" placeholder="Bassam Altayeed" required>
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="nickname">Nickname (How you want to be called?)</label>
+            <div class="input-wrapper">
+              <i class="fa fa-user"></i>
+              <input type="text" id="nickname" placeholder="Bassy">
+            </div>
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="company-name">Company name</label>
+          <div class="input-wrapper">
+            <i class="fa fa-building"></i>
+            <input type="text" id="company-name" placeholder="Bassam">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="input-group">
+            <label for="email">Email</label>
+            <div class="input-wrapper">
+              <i class="fa fa-envelope"></i>
+              <input type="email" id="email" placeholder="Bassam">
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="location">Location</label>
+            <div class="input-wrapper">
+              <i class="fa fa-map-marker-alt"></i>
+              <input type="text" id="location" placeholder="Lagos">
+            </div>
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="sector">Sector</label>
+          <div class="input-wrapper">
+            <i class="fa fa-industry"></i>
+            <select id="sector" style="padding-left: 30px;">
+              <option value="option">Bassam</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="input-group">
+            <label for="password">Password</label>
+            <div class="input-wrapper">
+              <i class="fa fa-lock"></i>
+              <input type="password" id="password" placeholder="••••••••" required>
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="confirm-password">Confirm password</label>
+            <div class="input-wrapper">
+              <i class="fa fa-lock"></i>
+              <input type="password" id="confirm-password" placeholder="••••••••" required>
+            </div>
+          </div>
+        </div>
+        <button class="signup-button">Signup <i class="fa fa-arrow-right"></i></button>
+        <p>Have an account already? <a href="#">Login</a></p>
+      </form>
+    </div>
+
+    <!-- Right Section: Welcome Section -->
+    <div class="welcome-section">
+      <img src="./Assets/Carpenter.jpg" alt="Welcome Image" class="welcome-image">
+      <h1>Welcome To <span class="highlight">Afrihustle</span>, Linking Talent And Opportunities.</h1>
+      <p>Join Afrihustle and connect to job opportunities, financial services, and skill development tailored for informal workers, gig workers, and artisans across Africa.</p>
+      <div class="carousel-indicators">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot active"></span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

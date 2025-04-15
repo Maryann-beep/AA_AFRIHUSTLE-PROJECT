@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Interface Clone</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      background-color: #f0f4f5;
+    }
+
+    .container {
+      display: flex;
+      background-color: #007b5e;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px white;
+      width: 800px;
+      overflow: hidden;
+    }
+
+    .left {
+      padding: 30px;
+      flex: 1;
+      color: black;
+    }
+    
+    .right {
+      padding: 30px;
+      flex: 1;
+      color: white;
+      
+    }
+
+    .left {
+      background-color: white;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"], select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      background-color: #dff5f4;
+      font-size: 16px;
+    }
+
+    .payment-method {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .payment-method label {
+      font-weight: normal;
+    }
+
+    .confirm-btn, .pay-btn {
+      margin-top: 30px;
+      padding: 12px;
+      width: 100%;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .confirm-btn {
+      background-color: #007b5e;
+      color: white;
+    }
+
+    .pay-btn {
+      background-color: #f57224;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h2>Pay To</h2>
+      <input type="text" value="David Eze" readonly>
+
+      <label>Amount</label>
+      <input type="text" value="$4000" readonly>
+
+      <label>Payment Method</label>
+      <div class="payment-method">
+        <label><input type="radio" name="method" checked> Card</label>
+        <label><input type="radio" name="method"> Bank</label>
+        <label><input type="radio" name="method"> Paypal</label>
+      </div>
+
+      <button class="confirm-btn">Confirm</button>
+    </div>
+
+    <div class="right">
+      <h2>Card Details</h2>
+      <label>Co-Holder’s Name</label>
+      <input type="text" value="Lasisi Kelvin" readonly>
+
+      <label>Card Number</label>
+      <input type="text" value="5352 7372 7822 3351" readonly>
+
+      <label>Expiry Date</label>
+      <div style="display: flex; gap: 10px;">
+        <select>
+          <option selected>07</option>
+          <!-- Add more months as needed -->
+        </select>
+        <select>
+          <option selected>2025</option>
+          <!-- Add more years as needed -->
+        </select>
+      </div>
+
+      <label>CVC/CVV</label>
+      <input type="text" placeholder="•••">
+
+      <button class="pay-btn" onclick="alert('Payment processed (simulated)')">Pay Now</button>
+    </div>
+  </div>
+</body>
+</html>

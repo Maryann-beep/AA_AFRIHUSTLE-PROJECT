@@ -1,0 +1,86 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left Section */
+.left-section {
+  background-color: #007b5e; /* Green background */
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 80px;
+}
+
+.btn {
+  margin-top: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.employer-btn {
+  background-color: #ffa500; /* Orange button */
+  padding: 5px 30px;
+  padding-top: 8px;
+  margin-top: 2px;
+  border: none;
+}
+
+.service-provider-btn {
+  background-color: #007b5e; /* Green button */
+  border-color: white;
+  padding: 5px 15px;
+}
+
+.signin-link {
+  color: #ffa500;
+}
+
+/* Right Section */
+.right-section {
+  width: 70%;
+  padding: 50px;
+}
+
+.image {
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 13px;
+}
+
+/* Slider Dots */
+.slider-dots {
+  margin-top: 20px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin-right: 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background-color: #ffa500; /* Active dot color */
+}

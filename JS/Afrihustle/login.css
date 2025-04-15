@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+/* Left */
+.left-section {
+  flex: 1;
+  background: #ffffff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-section .main-image {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.left-section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.left-section .highlight {
+  color: #f57c00;
+}
+
+.left-section p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Right */
+.right-section {
+  flex: 1;
+  background-color: #007b5e;
+  color: #ffffff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.logo {
+  width: 60px;
+  border-radius: 20%;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+.right-section h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #007b5e;
+  border-color: #ffffff;
+}
+
+.icon-wrap {
+  position: relative;
+}
+
+.icon-wrap i {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: white;
+  pointer-events: none; /* makes icon unclickable */
+}
+
+.icon-wrap input {
+  width: 100%;
+  padding: 10px 12px 10px 38px; /* left padding to avoid overlapping the icon */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.extra-links {
+  text-align: left;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.extra-links a {
+  color: white;
+  text-decoration: underline;
+}
+
+.login-btn {
+  background-color: #f57c00;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.login-btn:hover {
+  background-color: #e66c00;
+}
+
+.signup-link {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.signup-link a {
+  color: #f57c00;
+  text-decoration: underline;
+}
+
+.social-login {
+  text-align: center;
+  font-size: small;
+}
+
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 28px;
+  cursor: pointer;
+}
